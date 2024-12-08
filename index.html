@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<body id="body">
+	<div class="showsett" id="showsett">
+		<span class="closesettings" id="close" onClick="closeSettings()">-</span><br>
+	<span class="darkmode">Dark Mode<input type="checkbox" id="darkmode"></span><br>		
+	<select id="level" class="level">
+	<option disabled="disabled">Select Level</option>
+	<option value="1" selected="selected" >Easy</option>
+	<option value="2" >Medium</option>
+	<option value="3" >Hard</option>
+	<option value="4" >Very Hard</option>
+	<option value="5" >Impossible</option>		
+	</select>
+	</div>
+	<div class="showhelp" id="showhelp">
+	<span class="closehelp" id="closehelp" onclick="closeHelp()">-</span>
+	<div class="helpsection">CONTROLS</div><br>
+	<div class="ht">◀ - Move snake to left.</div>
+	<div class="ht">▲ - Move snake to up. </div>
+	<div class="ht">▶ - Move snake to  right.</div>
+	<div class="ht">▼ - Move snake to  down.</div><br>
+	<div class="helpsection">MENU</div><br>
+	<div class="ht">⚙ - Open settings.</div>
+	<div class="ht">▶&nbsp- Unpause the game.</div>
+	<div class="ht">&nbspll &nbsp- Pause the game.</div>
+	<div class="ht">↻ - Restart the game if you lose.</div><br>
+	<div class="helpsection">HOW TO PLAY</div><br>
+	<div class="ht">- Move the snake using arrow controller.</div>
+	<div class="ht">- Eat the food to grow and gain score.</div>
+	<div class="ht">- Higher level - the higher sore you'll get.</div>
+	<div class="ht">- If you hit your body you will lose.</div>
+	<div class="ht">- If you hit the borders you will lose.</div>
+	</div>
+	<div class="set">
+		<span class="help" id="help" onclick="openHelp()">?</span>
+		<span class="settings" id="settings" onclick="showSettings()">⚙</span>
+		</div>
+	<h2 id="h2">ANACONDA</h2>
+		</span>
+		<span class="score" id="score">⭐ 0</span>
+		<span class="highscore" id="highscore">🏆 0</span>
+		<br>
+	<canvas id="canvas" width="330" height="300"></canvas>
+<div class="menu">
+<span class="play" id="play">▶</span>
+<span class="pause" id="pause">ll</span>
+<span class="restart" id="restart">↻</span>
+</div>
+<br>
+<div><span class="p" id="up">▲</span></div>
+<br>
+<br>
+<div>	<span class="p" id="left">◀</span>
+	<span class="p" id="down">▼</span>
+	<span class="p" id="right">▶</span>
+	</div>
+		<script type="text/javascript" src="index.js"></script>
+
+	</body>
+</html>
